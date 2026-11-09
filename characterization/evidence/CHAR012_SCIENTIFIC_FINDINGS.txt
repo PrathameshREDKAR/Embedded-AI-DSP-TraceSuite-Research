@@ -1,0 +1,60 @@
+ACCML CHAR-012 SCIENTIFIC FINDINGS
+================================
+
+COHORT: 13 accepted frozen traces
+FULL DYNAMIC INSTRUCTION RECORDS: 1,274,683,876
+FULL-TRACE ANALYSIS: CHAR-004 + CHAR-006
+CONSOLIDATION: CHAR-009
+TEMPORAL SAMPLING: 4 x 100,000 instructions per workload
+HOT-LINE SENSITIVITY: top 10 lines excluded per window
+
+FINDING 1: FULL-TRACE SPATIAL LOCALITY
+The consecutive-load same-64-byte-line fraction spans:
+Minimum: DCT 29.336%
+Maximum: FFT 70.718%
+
+FINDING 2: HOT-LINE SENSITIVITY
+Values are four-window arithmetic means per workload.
+FFT: raw=99.166% filtered=85.027% delta=-14.139 percentage points; hot10=95.270%
+IIR: raw=97.911% filtered=87.486% delta=-10.426 percentage points; hot10=83.424%
+DWT: raw=97.223% filtered=87.490% delta=-9.734 percentage points; hot10=77.983%
+BEAMFORM: raw=99.726% filtered=93.052% delta=-6.673 percentage points; hot10=96.270%
+CONV: raw=99.653% filtered=94.748% delta=-4.904 percentage points; hot10=94.061%
+MFCC: raw=98.838% filtered=94.617% delta=-4.221 percentage points; hot10=80.838%
+DCT: raw=99.550% filtered=96.918% delta=-2.632 percentage points; hot10=91.697%
+STFT: raw=99.435% filtered=97.969% delta=-1.466 percentage points; hot10=75.714%
+POLYPHASE: raw=99.922% filtered=98.907% delta=-1.015 percentage points; hot10=94.638%
+FIR: raw=99.927% filtered=99.408% delta=-0.519 percentage points; hot10=90.734%
+MATMUL: raw=89.700% filtered=89.485% delta=-0.215 percentage points; hot10=86.428%
+LMS: raw=99.734% filtered=99.647% delta=-0.087 percentage points; hot10=88.077%
+AEC_NLMS: raw=97.962% filtered=99.530% delta=+1.568 percentage points; hot10=86.933%
+
+FINDING 3: SAMPLED WINDOW FOOTPRINT VARIATION
+Sorted by maximum/minimum unique-line count:
+MFCC: windows=1257/144/1257/144 ratio=8.729
+STFT: windows=156/86/90/169 ratio=1.965
+AEC_NLMS: windows=45/42/43/43 ratio=1.071
+LMS: windows=34/32/32/34 ratio=1.062
+FIR: windows=39/41/40/41 ratio=1.051
+POLYPHASE: windows=43/43/43/42 ratio=1.024
+DCT: windows=89/87/89/87 ratio=1.023
+BEAMFORM: windows=181/183/180/182 ratio=1.017
+CONV: windows=145/144/144/144 ratio=1.007
+MATMUL: windows=665/664/665/664 ratio=1.002
+DWT: windows=1250/1250/1250/1249 ratio=1.001
+IIR: windows=1475/1474/1474/1474 ratio=1.001
+FFT: windows=263/263/263/263 ratio=1.000
+
+INTERPRETATION RULES
+- 64 bytes is the assumed cache-line size, not access size.
+- Recent reuse is not cache hit rate or LRU stack distance.
+- Filtered reuse changes the stream and the 1024-access history.
+- Hot addresses are not proven to be stack addresses.
+- The four sample windows are not independent trials.
+- Full-trace metrics must not be confused with window metrics.
+- Phase changes remain hypotheses pending execution-stage mapping.
+- No prefetching speedup is established by this characterization.
+- CP26's accepted canonical trace originated as a Pin sizing pilot.
+
+CP27: ON HOLD
+NO TRACE GENERATION, SIMULATION, OR SOURCE MODIFICATION.

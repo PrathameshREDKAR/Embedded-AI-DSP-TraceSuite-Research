@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 660">
+<rect width="1050" height="660" fill="white"/>
+<text x="170" y="43" font-size="23" font-family="Arial" font-weight="bold">Consecutive load accesses in the same cache line</text>
+<text x="170" y="69" font-size="14" font-family="Arial" fill="#555">Adjacent load-address transitions; 64-byte lines</text>
+<line x1="170.0" y1="90" x2="170.0" y2="590" stroke="#ddd"/>
+<text x="170.0" y="610" font-size="13" font-family="Arial" text-anchor="middle">0</text>
+<line x1="310.0" y1="90" x2="310.0" y2="590" stroke="#ddd"/>
+<text x="310.0" y="610" font-size="13" font-family="Arial" text-anchor="middle">20</text>
+<line x1="450.0" y1="90" x2="450.0" y2="590" stroke="#ddd"/>
+<text x="450.0" y="610" font-size="13" font-family="Arial" text-anchor="middle">40</text>
+<line x1="590.0" y1="90" x2="590.0" y2="590" stroke="#ddd"/>
+<text x="590.0" y="610" font-size="13" font-family="Arial" text-anchor="middle">60</text>
+<line x1="730.0" y1="90" x2="730.0" y2="590" stroke="#ddd"/>
+<text x="730.0" y="610" font-size="13" font-family="Arial" text-anchor="middle">80</text>
+<line x1="870.0" y1="90" x2="870.0" y2="590" stroke="#ddd"/>
+<text x="870.0" y="610" font-size="13" font-family="Arial" text-anchor="middle">100</text>
+<text x="155" y="123" font-size="14" font-family="Arial" text-anchor="end">FFT</text>
+<rect x="170" y="105" width="495.02" height="23" fill="#33465a"/>
+<text x="672.02" y="122" font-size="13" font-family="Arial">70.72%</text>
+<text x="155" y="162" font-size="14" font-family="Arial" text-anchor="end">FIR</text>
+<rect x="170" y="144" width="390.22" height="23" fill="#33465a"/>
+<text x="567.22" y="161" font-size="13" font-family="Arial">55.75%</text>
+<text x="155" y="201" font-size="14" font-family="Arial" text-anchor="end">CONV</text>
+<rect x="170" y="183" width="372.61" height="23" fill="#33465a"/>
+<text x="549.61" y="200" font-size="13" font-family="Arial">53.23%</text>
+<text x="155" y="240" font-size="14" font-family="Arial" text-anchor="end">MATMUL</text>
+<rect x="170" y="222" width="389.30" height="23" fill="#33465a"/>
+<text x="566.30" y="239" font-size="13" font-family="Arial">55.61%</text>
+<text x="155" y="279" font-size="14" font-family="Arial" text-anchor="end">IIR</text>
+<rect x="170" y="261" width="262.50" height="23" fill="#33465a"/>
+<text x="439.50" y="278" font-size="13" font-family="Arial">37.50%</text>
+<text x="155" y="318" font-size="14" font-family="Arial" text-anchor="end">DCT</text>
+<rect x="170" y="300" width="205.35" height="23" fill="#33465a"/>
+<text x="382.35" y="317" font-size="13" font-family="Arial">29.34%</text>
+<text x="155" y="357" font-size="14" font-family="Arial" text-anchor="end">DWT</text>
+<rect x="170" y="339" width="465.66" height="23" fill="#33465a"/>
+<text x="642.66" y="356" font-size="13" font-family="Arial">66.52%</text>
+<text x="155" y="396" font-size="14" font-family="Arial" text-anchor="end">LMS</text>
+<rect x="170" y="378" width="272.56" height="23" fill="#33465a"/>
+<text x="449.56" y="395" font-size="13" font-family="Arial">38.94%</text>
+<text x="155" y="435" font-size="14" font-family="Arial" text-anchor="end">POLYPHASE</text>
+<rect x="170" y="417" width="452.05" height="23" fill="#33465a"/>
+<text x="629.05" y="434" font-size="13" font-family="Arial">64.58%</text>
+<text x="155" y="474" font-size="14" font-family="Arial" text-anchor="end">STFT</text>
+<rect x="170" y="456" width="416.02" height="23" fill="#33465a"/>
+<text x="593.02" y="473" font-size="13" font-family="Arial">59.43%</text>
+<text x="155" y="513" font-size="14" font-family="Arial" text-anchor="end">MFCC</text>
+<rect x="170" y="495" width="385.87" height="23" fill="#33465a"/>
+<text x="562.87" y="512" font-size="13" font-family="Arial">55.12%</text>
+<text x="155" y="552" font-size="14" font-family="Arial" text-anchor="end">BEAMFORM</text>
+<rect x="170" y="534" width="340.79" height="23" fill="#33465a"/>
+<text x="517.79" y="551" font-size="13" font-family="Arial">48.68%</text>
+<text x="520" y="640" font-size="14" font-family="Arial" text-anchor="middle">Percentage (%)</text>
+</svg>

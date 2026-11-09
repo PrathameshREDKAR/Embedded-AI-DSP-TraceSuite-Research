@@ -1,0 +1,86 @@
+CP13 FIR FINAL MATCHED PREFETCHER RESULTS
+
+STATUS:
+CP13 FIR COMPLETE
+
+COMMON EXPERIMENT CONDITIONS:
+Trace:
+  fir_13x_final.champsimtrace.xz
+
+Trace SHA256:
+  fca9d0552d3fe782365a73b7ff3597c5099bd9f0b82f560da542c8d24e2d183e
+
+Simulator:
+  Athena compatibility-fixed binary
+
+Binary SHA256:
+  13e1bcfef53b68d1bd3d36ac38c8725dc49f3247ca3c0849cd0036a1291ede94
+
+Compatibility-patched src/ooo_cpu.cc SHA256:
+  3c3465f1efded7d602489ab4d42cbef644dd4ea528d390874c5fa114052d01cd
+
+Common simulation policy:
+  warmup_instructions=10000000
+  simulation_instructions=50000000
+  llc_replacement_type=lru
+  rob_partition_size=64,128,320
+  rob_frontal_partition_ids=0
+  rob_dorsal_partition_ids=2
+  dram_io_freq=400
+
+MATCHED RESULTS:
+
+NOPREF:
+  IPC: 0.96770
+  Cycles: 51668655
+  Measured instructions: 50000001
+  Delta vs NOPREF: reference
+
+IPCP:
+  IPC: 0.96817
+  Cycles: 51643640
+  Measured instructions: 50000001
+  IPC improvement vs NOPREF: +0.0486%
+  Cycle reduction vs NOPREF: 25015
+
+BERTI:
+  IPC: 0.98347
+  Cycles: 50840519
+  Measured instructions: 50000001
+  IPC improvement vs NOPREF: +1.6296%
+  Cycle reduction vs NOPREF: 828136
+
+PYTHIA:
+  IPC: 0.97738
+  Cycles: 51157055
+  Measured instructions: 50000001
+  IPC improvement vs NOPREF: +1.0003%
+  Cycle reduction vs NOPREF: 511600
+
+DESCRIPTIVE ORDER FOR THIS FIR TRACE ONLY:
+  BERTI   0.98347
+  PYTHIA  0.97738
+  IPCP    0.96817
+  NOPREF  0.96770
+
+IMPORTANT INTERPRETATION:
+These results are specific to the frozen CP13 FIR workload and this
+simulation configuration. They do not establish a suite-wide prefetcher
+ordering. Cross-workload conclusions must wait until the remaining DSP
+kernels are evaluated under the same simulator and policy.
+
+PYTHIA NOTE:
+Pythia/Scooby is configured as an L2C prefetcher with
+l2c_prefetcher_force_prefetch_at_llc=true. Therefore its L2C filled/useful
+counters are not the appropriate final fill location; the LLC counters
+capture actual prefetch fill/use behavior.
+
+BERTI NOTE:
+Berti internal prefetch-issued counters and cache-level L1D prefetch-issued
+counters represent different counting stages and are preserved separately.
+
+COMPATIBILITY NOTE:
+The FIR trace exposed a false pseudo-IP register dependency in the original
+Athena trace-consumption path. The compatibility binary used for all CP13
+matched results activates Athena's already-present intended pseudo-register
+filters. The original frozen Athena source remains untouched.

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "accepted_workloads": 13,
+  "records_total": 1274683876,
+  "prior_main_cohort_audit": "CHAR005_PASS",
+  "cp26_frozen_closure_attestation_verified_by_powershell": true,
+  "cp26_original_trace_role": "1x Pin sizing pilot, subsequently accepted as canonical final",
+  "analysis_type": "consolidation_and_arithmetic_audit",
+  "new_trace_scan": false,
+  "independent_raw_recomputation": false,
+  "limitations": [
+    "Address-slot counts are not distinct memory instructions",
+    "Adjacent-address same-line fraction is not cache hit rate",
+    "Working-set windows cover 100000 instructions each, not entire traces",
+    "Exact access sizes are not present in trace ABI",
+    "CP26 accepted from prior 1x sizing pilot"
+  ]
+}

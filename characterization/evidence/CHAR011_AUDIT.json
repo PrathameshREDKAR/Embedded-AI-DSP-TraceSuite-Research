@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "workloads": 13,
+  "windows": 52,
+  "independent_reuse_crosschecks": 52,
+  "hotline_definition": "10 most frequent 64-byte lines within each window",
+  "filtered_history": 1024,
+  "filtered_history_scope": "retained address stream only",
+  "source_destination_order": "destination then source slots",
+  "full_trace_claim": false,
+  "limitations": [
+    "Filtering changes the reference stream and history spacing",
+    "Most frequent lines cannot automatically be identified as stack traffic",
+    "This is not an LRU cache simulation or cache hit/miss measurement",
+    "Four windows are observations, not independent workload replicates",
+    "Memory-access sizes and physical addresses are unavailable"
+  ]
+}

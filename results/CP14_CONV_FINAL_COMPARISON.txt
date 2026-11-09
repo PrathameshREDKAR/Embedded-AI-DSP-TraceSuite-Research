@@ -1,0 +1,66 @@
+CP14 CONVOLUTION FINAL FOUR-ARM COMPARISON
+=========================================
+
+WORKLOAD
+Direct 2D valid convolution
+Input: 256 x 256
+Kernel: 3 x 3
+Stride: 1
+Padding: none
+Output: 254 x 254
+Datatype: double
+Runs in trace: 3
+
+SIMULATION POLICY
+warmup_instructions=10000000
+simulation_instructions=50000000
+llc_replacement=LRU
+dram_io_freq=400
+
+SIMULATOR
+compatibility-patched Athena
+
+ATHENA_BINARY_SHA256
+13e1bcfef53b68d1bd3d36ac38c8725dc49f3247ca3c0849cd0036a1291ede94
+
+TRACE_SHA256
+bd3f251988410a9244b44e2bd91c0c1aa051670963905b844d4d89b802344455
+
+RESULTS
+-------
+NOPREF
+instructions=50000002
+cycles=31823103
+IPC=1.57119
+
+IPCP
+instructions=50000000
+cycles=28722178
+IPC=1.74082
+speedup_vs_NOPREF_percent=10.796274
+
+BERTI
+instructions=50000000
+cycles=28697668
+IPC=1.74230
+speedup_vs_NOPREF_percent=10.890902
+
+PYTHIA
+instructions=50000000
+cycles=30003843
+IPC=1.66645
+speedup_vs_NOPREF_percent=6.063423
+
+CYCLE-DERIVED FORMULAS
+----------------------
+IPCP:
+31823103 / 28722178 - 1
+
+BERTI:
+31823103 / 28697668 - 1
+
+PYTHIA:
+31823103 / 30003843 - 1
+
+STATUS
+CP14 CONVOLUTION FOUR-ARM COMPARISON COMPLETE.

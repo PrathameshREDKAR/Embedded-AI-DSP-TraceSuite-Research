@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 690">
+<rect width="1000" height="690" fill="white"/>
+<text x="155" y="40" font-family="Arial" font-size="22" font-weight="bold">Dynamic branch instruction frequency</text>
+<line x1="155.00" y1="75" x2="155.00" y2="625" stroke="#ddd"/>
+<text x="155.00" y="649" font-family="Arial" font-size="12" text-anchor="middle">0%</text>
+<line x1="289.00" y1="75" x2="289.00" y2="625" stroke="#ddd"/>
+<text x="289.00" y="649" font-family="Arial" font-size="12" text-anchor="middle">20%</text>
+<line x1="423.00" y1="75" x2="423.00" y2="625" stroke="#ddd"/>
+<text x="423.00" y="649" font-family="Arial" font-size="12" text-anchor="middle">40%</text>
+<line x1="557.00" y1="75" x2="557.00" y2="625" stroke="#ddd"/>
+<text x="557.00" y="649" font-family="Arial" font-size="12" text-anchor="middle">60%</text>
+<line x1="691.00" y1="75" x2="691.00" y2="625" stroke="#ddd"/>
+<text x="691.00" y="649" font-family="Arial" font-size="12" text-anchor="middle">80%</text>
+<line x1="825.00" y1="75" x2="825.00" y2="625" stroke="#ddd"/>
+<text x="825.00" y="649" font-family="Arial" font-size="12" text-anchor="middle">100%</text>
+<text x="143" y="106" font-family="Arial" font-size="13" text-anchor="end">FFT</text>
+<rect x="155" y="90" width="40.46" height="23" fill="#405365"/>
+<text x="202.46" y="106" font-family="Arial" font-size="12">6.04%</text>
+<text x="143" y="146" font-family="Arial" font-size="13" text-anchor="end">FIR</text>
+<rect x="155" y="130" width="68.08" height="23" fill="#405365"/>
+<text x="230.08" y="146" font-family="Arial" font-size="12">10.16%</text>
+<text x="143" y="186" font-family="Arial" font-size="13" text-anchor="end">CONV</text>
+<rect x="155" y="170" width="67.42" height="23" fill="#405365"/>
+<text x="229.42" y="186" font-family="Arial" font-size="12">10.06%</text>
+<text x="143" y="226" font-family="Arial" font-size="13" text-anchor="end">MATMUL</text>
+<rect x="155" y="210" width="56.34" height="23" fill="#405365"/>
+<text x="218.34" y="226" font-family="Arial" font-size="12">8.41%</text>
+<text x="143" y="266" font-family="Arial" font-size="13" text-anchor="end">IIR</text>
+<rect x="155" y="250" width="78.82" height="23" fill="#405365"/>
+<text x="240.82" y="266" font-family="Arial" font-size="12">11.76%</text>
+<text x="143" y="306" font-family="Arial" font-size="13" text-anchor="end">DCT</text>
+<rect x="155" y="290" width="57.28" height="23" fill="#405365"/>
+<text x="219.28" y="306" font-family="Arial" font-size="12">8.55%</text>
+<text x="143" y="346" font-family="Arial" font-size="13" text-anchor="end">DWT</text>
+<rect x="155" y="330" width="55.07" height="23" fill="#405365"/>
+<text x="217.07" y="346" font-family="Arial" font-size="12">8.22%</text>
+<text x="143" y="386" font-family="Arial" font-size="13" text-anchor="end">LMS</text>
+<rect x="155" y="370" width="72.47" height="23" fill="#405365"/>
+<text x="234.47" y="386" font-family="Arial" font-size="12">10.82%</text>
+<text x="143" y="426" font-family="Arial" font-size="13" text-anchor="end">POLYPHASE</text>
+<rect x="155" y="410" width="104.06" height="23" fill="#405365"/>
+<text x="266.06" y="426" font-family="Arial" font-size="12">15.53%</text>
+<text x="143" y="466" font-family="Arial" font-size="13" text-anchor="end">STFT</text>
+<rect x="155" y="450" width="38.55" height="23" fill="#405365"/>
+<text x="200.55" y="466" font-family="Arial" font-size="12">5.75%</text>
+<text x="143" y="506" font-family="Arial" font-size="13" text-anchor="end">MFCC</text>
+<rect x="155" y="490" width="21.50" height="23" fill="#405365"/>
+<text x="183.50" y="506" font-family="Arial" font-size="12">3.21%</text>
+<text x="143" y="546" font-family="Arial" font-size="13" text-anchor="end">BEAMFORM</text>
+<rect x="155" y="530" width="121.64" height="23" fill="#405365"/>
+<text x="283.64" y="546" font-family="Arial" font-size="12">18.16%</text>
+<text x="143" y="586" font-family="Arial" font-size="13" text-anchor="end">AEC_NLMS</text>
+<rect x="155" y="570" width="54.17" height="23" fill="#405365"/>
+<text x="216.17" y="586" font-family="Arial" font-size="12">8.09%</text>
+</svg>

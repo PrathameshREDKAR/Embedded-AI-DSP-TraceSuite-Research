@@ -1,0 +1,63 @@
+FINAL DSP/AI PREFETCHER SUITE RESULTS
+=====================================
+
+Common final simulation policy:
+  Warmup instructions : 10,000,000
+  Measured instructions target : 50,000,000
+  LLC replacement : LRU
+  DRAM I/O frequency : 400
+  ROB partitions : 64,128,320
+  Frontal partition : 0
+  Dorsal partition : 2
+
+Compatibility Athena binary SHA256:
+13e1bcfef53b68d1bd3d36ac38c8725dc49f3247ca3c0849cd0036a1291ede94
+
+
+WORKLOAD: FFT
+-------------
+NOPREF   IPC=1.58277   cycles=31590256   improvement=0.000000%
+IPCP     IPC=1.60032   cycles=31243724   improvement=1.109125%
+BERTI    IPC=1.63517   cycles=30577873   improvement=3.310835%
+PYTHIA   IPC=1.63849   cycles=30515919   improvement=3.520579%
+
+
+WORKLOAD: FIR
+-------------
+NOPREF   IPC=0.96770   cycles=51668655   improvement=0.0000%
+IPCP     IPC=0.96817   cycles=51643640   improvement=0.0486%
+BERTI    IPC=0.98347   cycles=50840519   improvement=1.6296%
+PYTHIA   IPC=0.97738   cycles=51157055   improvement=1.0003%
+
+
+WORKLOAD: CONVOLUTION
+---------------------
+NOPREF   IPC=1.57119   cycles=31823103   improvement=0.000000%
+IPCP     IPC=1.74082   cycles=28722178   improvement=10.796274%
+BERTI    IPC=1.74230   cycles=28697668   improvement=10.890902%
+PYTHIA   IPC=1.66645   cycles=30003843   improvement=6.063423%
+
+
+WORKLOAD: MATRIX MULTIPLICATION
+-------------------------------
+NOPREF   IPC=0.67875   cycles=73665292   improvement=0.000000%
+IPCP     IPC=0.99799   cycles=50100737   improvement=47.034348%
+BERTI    IPC=0.99688   cycles=50156737   improvement=46.870184%
+PYTHIA   IPC=0.68020   cycles=73507846   improvement=0.214189%
+
+
+WORKLOAD: IIR
+-------------
+NOPREF   IPC=0.30975   cycles=161420835   improvement=0.000000%
+IPCP     IPC=0.51909   cycles=96322796    improvement=67.583212%
+BERTI    IPC=0.51239   cycles=97582554    improvement=65.419769%
+PYTHIA   IPC=0.51182   cycles=97690367    improvement=65.237208%
+
+
+PROVENANCE NOTE
+---------------
+All numerical values above are copied from the already-frozen CP12-CP16
+comparison artifacts contained in the CP17 suite freeze.
+
+CP18 does not rerun ChampSim, regenerate traces, modify simulator code,
+or recompute the frozen workload results.

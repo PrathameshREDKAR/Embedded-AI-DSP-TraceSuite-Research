@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "workloads": 13,
+  "full_records": 1274683876,
+  "sampled_windows": 52,
+  "temporal_crosschecks": 52,
+  "new_trace_scan": false,
+  "no_source_modification": true,
+  "cp27_on_hold": true,
+  "statistical_unit": "workload; windows are descriptive samples",
+  "aggregation": "unweighted arithmetic mean of four windows"
+}

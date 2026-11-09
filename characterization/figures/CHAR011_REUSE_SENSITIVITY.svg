@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 710">
+<rect width="1000" height="710" fill="white"/>
+<text x="155" y="35" font-family="Arial" font-size="22" font-weight="bold">Recent reuse: all lines versus excluding top ten</text>
+<text x="155" y="58" font-family="Arial" font-size="13">Four sampled windows per workload; 1,024-address history</text>
+<rect x="155" y="665" width="15" height="12" fill="#444"/>
+<text x="178" y="676" font-family="Arial" font-size="13">Original</text>
+<rect x="290" y="665" width="15" height="12" fill="#aaa"/>
+<text x="313" y="676" font-family="Arial" font-size="13">After excluding top ten lines</text>
+<line x1="155.0" y1="83" x2="155.0" y2="625" stroke="#ddd"/>
+<text x="155.0" y="646" text-anchor="middle" font-family="Arial" font-size="12">0%</text>
+<line x1="289.0" y1="83" x2="289.0" y2="625" stroke="#ddd"/>
+<text x="289.0" y="646" text-anchor="middle" font-family="Arial" font-size="12">20%</text>
+<line x1="423.0" y1="83" x2="423.0" y2="625" stroke="#ddd"/>
+<text x="423.0" y="646" text-anchor="middle" font-family="Arial" font-size="12">40%</text>
+<line x1="557.0" y1="83" x2="557.0" y2="625" stroke="#ddd"/>
+<text x="557.0" y="646" text-anchor="middle" font-family="Arial" font-size="12">60%</text>
+<line x1="691.0" y1="83" x2="691.0" y2="625" stroke="#ddd"/>
+<text x="691.0" y="646" text-anchor="middle" font-family="Arial" font-size="12">80%</text>
+<line x1="825.0" y1="83" x2="825.0" y2="625" stroke="#ddd"/>
+<text x="825.0" y="646" text-anchor="middle" font-family="Arial" font-size="12">100%</text>
+<text x="143" y="107" text-anchor="end" font-family="Arial" font-size="12">FFT</text>
+<rect x="155" y="90" width="664.41" height="11" fill="#444"/>
+<rect x="155" y="103" width="569.68" height="11" fill="#aaa"/>
+<text x="845" y="107" font-family="Arial" font-size="12">99.2% / 85.0%</text>
+<text x="143" y="147" text-anchor="end" font-family="Arial" font-size="12">FIR</text>
+<rect x="155" y="130" width="669.51" height="11" fill="#444"/>
+<rect x="155" y="143" width="666.03" height="11" fill="#aaa"/>
+<text x="845" y="147" font-family="Arial" font-size="12">99.9% / 99.4%</text>
+<text x="143" y="187" text-anchor="end" font-family="Arial" font-size="12">CONV</text>
+<rect x="155" y="170" width="667.67" height="11" fill="#444"/>
+<rect x="155" y="183" width="634.81" height="11" fill="#aaa"/>
+<text x="845" y="187" font-family="Arial" font-size="12">99.7% / 94.7%</text>
+<text x="143" y="227" text-anchor="end" font-family="Arial" font-size="12">MATMUL</text>
+<rect x="155" y="210" width="600.99" height="11" fill="#444"/>
+<rect x="155" y="223" width="599.55" height="11" fill="#aaa"/>
+<text x="845" y="227" font-family="Arial" font-size="12">89.7% / 89.5%</text>
+<text x="143" y="267" text-anchor="end" font-family="Arial" font-size="12">IIR</text>
+<rect x="155" y="250" width="656.01" height="11" fill="#444"/>
+<rect x="155" y="263" width="586.15" height="11" fill="#aaa"/>
+<text x="845" y="267" font-family="Arial" font-size="12">97.9% / 87.5%</text>
+<text x="143" y="307" text-anchor="end" font-family="Arial" font-size="12">DCT</text>
+<rect x="155" y="290" width="666.98" height="11" fill="#444"/>
+<rect x="155" y="303" width="649.35" height="11" fill="#aaa"/>
+<text x="845" y="307" font-family="Arial" font-size="12">99.5% / 96.9%</text>
+<text x="143" y="347" text-anchor="end" font-family="Arial" font-size="12">DWT</text>
+<rect x="155" y="330" width="651.40" height="11" fill="#444"/>
+<rect x="155" y="343" width="586.18" height="11" fill="#aaa"/>
+<text x="845" y="347" font-family="Arial" font-size="12">97.2% / 87.5%</text>
+<text x="143" y="387" text-anchor="end" font-family="Arial" font-size="12">LMS</text>
+<rect x="155" y="370" width="668.22" height="11" fill="#444"/>
+<rect x="155" y="383" width="667.63" height="11" fill="#aaa"/>
+<text x="845" y="387" font-family="Arial" font-size="12">99.7% / 99.6%</text>
+<text x="143" y="427" text-anchor="end" font-family="Arial" font-size="12">POLYPHASE</text>
+<rect x="155" y="410" width="669.48" height="11" fill="#444"/>
+<rect x="155" y="423" width="662.68" height="11" fill="#aaa"/>
+<text x="845" y="427" font-family="Arial" font-size="12">99.9% / 98.9%</text>
+<text x="143" y="467" text-anchor="end" font-family="Arial" font-size="12">STFT</text>
+<rect x="155" y="450" width="666.22" height="11" fill="#444"/>
+<rect x="155" y="463" width="656.39" height="11" fill="#aaa"/>
+<text x="845" y="467" font-family="Arial" font-size="12">99.4% / 98.0%</text>
+<text x="143" y="507" text-anchor="end" font-family="Arial" font-size="12">MFCC</text>
+<rect x="155" y="490" width="662.21" height="11" fill="#444"/>
+<rect x="155" y="503" width="633.93" height="11" fill="#aaa"/>
+<text x="845" y="507" font-family="Arial" font-size="12">98.8% / 94.6%</text>
+<text x="143" y="547" text-anchor="end" font-family="Arial" font-size="12">BEAMFORM</text>
+<rect x="155" y="530" width="668.16" height="11" fill="#444"/>
+<rect x="155" y="543" width="623.45" height="11" fill="#aaa"/>
+<text x="845" y="547" font-family="Arial" font-size="12">99.7% / 93.1%</text>
+<text x="143" y="587" text-anchor="end" font-family="Arial" font-size="12">AEC_NLMS</text>
+<rect x="155" y="570" width="656.35" height="11" fill="#444"/>
+<rect x="155" y="583" width="666.85" height="11" fill="#aaa"/>
+<text x="845" y="587" font-family="Arial" font-size="12">98.0% / 99.5%</text>
+</svg>

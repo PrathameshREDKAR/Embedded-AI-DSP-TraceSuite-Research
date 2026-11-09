@@ -1,0 +1,35 @@
+# Raw / uncompressed traces
+*.bin
+*.champsimtrace
+
+# Compiled binaries and build products
+*.exe
+*.dll
+*.obj
+*.lib
+*.pdb
+*.so
+*.dylib
+
+# Build directories
+build/
+bin/
+obj/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Python/cache artifacts
+__pycache__/
+*.pyc
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Important: compressed final traces (*.xz) are intentionally tracked

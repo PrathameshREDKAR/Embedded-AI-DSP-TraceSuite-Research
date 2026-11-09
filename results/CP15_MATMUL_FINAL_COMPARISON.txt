@@ -1,0 +1,73 @@
+CP15 MATRIX MULTIPLICATION — FINAL FOUR-ARM COMPARISON
+=====================================================
+
+WORKLOAD
+Dense matrix multiplication
+N=128
+MATMUL_RUNS=2
+double
+direct i-j-k
+single-threaded
+MSVC /Od
+
+ATHENA_BINARY_SHA256
+13e1bcfef53b68d1bd3d36ac38c8725dc49f3247ca3c0849cd0036a1291ede94
+
+TRACE_SHA256
+4a8e068d942ecebd7f7a118ec9c4cf1b3b9af30c63d5d4679d5a5a52fd4504ae
+
+PROTOCOL_SHA256
+0b275c4e2edb418f6dfd1e05251f608989cfb76e4d0d96fc81a2117d072e506c
+
+SIMULATION
+warmup_instructions=10000000
+simulation_instructions=50000000
+llc_replacement_type=lru
+dram_io_freq=400
+
+RESULTS
+
+NOPREF
+measured_instructions=50000000
+cycles=73665292
+IPC=0.67875
+improvement_vs_NOPREF_percent=0.000000
+
+IPCP
+measured_instructions=50000000
+cycles=50100737
+IPC=0.99799
+improvement_vs_NOPREF_percent=47.034348
+
+BERTI
+measured_instructions=50000000
+cycles=50156737
+IPC=0.99688
+improvement_vs_NOPREF_percent=46.870184
+
+PYTHIA
+measured_instructions=50000000
+cycles=73507846
+IPC=0.68020
+improvement_vs_NOPREF_percent=0.214189
+
+LOG_SHA256
+
+NOPREF
+68e8e8b3d252bd3f041fa337b0a89006cec347f647b63446683c45285157e244
+
+IPCP
+d68ee5d9820e353850d942db6c16b2ab5035d6dd5dd8a167d39d0571daa07669
+
+BERTI
+05278a9d44b4cb4a5cb3313bd696d6bd0155f05a407d10a82848db3c39d5c449
+
+PYTHIA
+a04343e09dd878a0f50356f34e39df456aeb8e6d17ba8cc60455166f009cadb9
+
+STATUS
+CP15 matrix-multiplication four-arm evaluation complete.
+All arms used the exact same frozen trace, Athena binary, LRU policy,
+10M warmup, and 50M measured instructions.
+
+CP15_COMPLETE=YES

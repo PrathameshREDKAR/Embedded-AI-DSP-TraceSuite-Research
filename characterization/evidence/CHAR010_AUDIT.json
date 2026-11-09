@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "workloads": 13,
+  "windows_verified": 52,
+  "records_per_window": 100000,
+  "memory_history_accesses": 1024,
+  "independent_scalar_decoder": true,
+  "full_trace_temporal_reuse_claim": false,
+  "source_traces_modified": false,
+  "limitations": [
+    "Only four nonoverlapping sampled windows per trace",
+    "Recent reuse is access-history-based, not exact stack distance",
+    "Per-instruction source/destination temporal order is unavailable",
+    "Unique-line footprint is a window footprint, not a full-trace footprint",
+    "Virtual-address trace lines do not imply physical cache residency"
+  ]
+}

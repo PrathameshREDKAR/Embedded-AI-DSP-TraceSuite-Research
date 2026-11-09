@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+# Keep compressed traces binary
+*.xz -text

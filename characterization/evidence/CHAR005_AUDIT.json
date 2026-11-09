@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "workloads": 12,
+  "validation_type": "independent_arithmetic_and_metadata_checks",
+  "raw_bytes_recomputed": false,
+  "external_reexecution": false,
+  "historical_raw_hash_matches": 6,
+  "checked_workloads": [
+    "FFT_AUDIT_PASS",
+    "FIR_AUDIT_PASS",
+    "CONV_AUDIT_PASS",
+    "MATMUL_AUDIT_PASS",
+    "IIR_AUDIT_PASS",
+    "DCT_AUDIT_PASS",
+    "DWT_AUDIT_PASS",
+    "LMS_AUDIT_PASS",
+    "POLYPHASE_AUDIT_PASS",
+    "STFT_AUDIT_PASS",
+    "MFCC_AUDIT_PASS",
+    "BEAMFORM_AUDIT_PASS"
+  ],
+  "cp26_aec_nlms_excluded": true,
+  "cp27_on_hold": true,
+  "limitations": [
+    "No external recomputation of raw memory statistics in this step",
+    "Working-set windows are sampled, not complete-trace footprints",
+    "Consecutive same-line fraction is not a cache hit rate",
+    "Exact memory-access sizes are unavailable",
+    "Later raw hashes await reconciliation with historical manifests"
+  ]
+}
