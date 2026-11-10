@@ -1,0 +1,10 @@
+PROTOCOL=GIGA_P2_PILOT16_V1
+MANIFEST_SHA256=8e9cecf5995b4f9c089bd76bdef6496291b143f6444925e1e5ddcccb79ef3179
+RUN_ID=GIGA_P2_PILOT_MATMUL_PYTHIA_001
+RUN_NUMBER=12
+ONE_SHOT=YES
+RETRIES=FORBIDDEN
+TRACE_SHA256=4a8e068d942ecebd7f7a118ec9c4cf1b3b9af30c63d5d4679d5a5a52fd4504ae
+BINARY_SHA256=02b9e0349f23309cfb9907049f62482e94b006f5704577ebac7609452f48845a
+ARGUMENTS=--warmup_instructions=10000000 --simulation_instructions=50000000 --llc_replacement_type=lru --cloudsuite=false --low_bandwidth=false --dram_io_freq=3200 --l1d_prefetcher_types=none --l2c_prefetcher_types=scooby --config=/home/REDACTED_USER/giga_ispass_2027_prospective/athena/config/pythia.ini --l2c_prefetcher_force_prefetch_at_llc=true -traces /mnt/d/Embedded_AI_DSP_TraceSuite/GITHUB_CLEAN_RELEASE_CANDIDATE_20261109/traces/matmul_2x_final.champsimtrace.xz
+CREATED_UTC=2026-11-10T10:28:15.5512505Z

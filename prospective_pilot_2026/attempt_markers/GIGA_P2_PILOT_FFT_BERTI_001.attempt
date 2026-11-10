@@ -1,0 +1,10 @@
+PROTOCOL=GIGA_P2_PILOT16_V1
+MANIFEST_SHA256=8e9cecf5995b4f9c089bd76bdef6496291b143f6444925e1e5ddcccb79ef3179
+RUN_ID=GIGA_P2_PILOT_FFT_BERTI_001
+RUN_NUMBER=3
+ONE_SHOT=YES
+RETRIES=FORBIDDEN
+TRACE_SHA256=d9b9d9a37f18b39f28b6818391afb2a152abace68aeb65396902771500dcbc89
+BINARY_SHA256=02b9e0349f23309cfb9907049f62482e94b006f5704577ebac7609452f48845a
+ARGUMENTS=--warmup_instructions=10000000 --simulation_instructions=50000000 --llc_replacement_type=lru --cloudsuite=false --low_bandwidth=false --dram_io_freq=3200 --l1d_prefetcher_types=berti --l2c_prefetcher_types=none -traces /mnt/d/Embedded_AI_DSP_TraceSuite/GITHUB_CLEAN_RELEASE_CANDIDATE_20261109/traces/fft_100x_final.champsimtrace.xz
+CREATED_UTC=2026-11-10T09:55:44.0951499Z
